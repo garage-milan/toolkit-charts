@@ -3,7 +3,7 @@
 A collection of helm charts used by and/or provided for the Garage Cloud Native Toolkit artifacts
 
 This GitHub repository also serves as a Helm repository, hosting the helm charts via GitHub pages. The url
-for the Helm repository is https://ibm-garage-cloud.github.io/toolkit-charts/
+for the Helm repository is https://garage-milan.github.io/toolkit-charts/
 
 ## Usage
 
@@ -12,7 +12,7 @@ The following commands assume Helm 3. The helm charts can be used with Helm 2 bu
 ### Register the helm repository
 
 ```
-helm repo add toolkit-charts https://ibm-garage-cloud.github.io/toolkit-charts/
+helm repo add toolkit-charts https://garage-milan.github.io/toolkit-charts/
 ```
 
 ### List the charts in the helm repository
@@ -39,5 +39,5 @@ helm install mychart toolkit-charts/{chart} --namespace {namespace} ...
 Alternatively, the helm repo can be inlined with the `--repo` argument, skipping the `helm repo add` step
 
 ```
-helm template mychart {chart} --namespace {namespace} --repo https://ibm-garage-cloud.github.io/toolkit-charts/ ... | kubectl apply -n {namespace} -f -
+helm template mychart {chart} --namespace {namespace} --repo https://garage-milan.github.io/toolkit-charts/ ... | kubectl apply -n {namespace} -f -
 ```
